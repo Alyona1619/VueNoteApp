@@ -60,42 +60,31 @@
                     <h2>Список заметок</h2>
 
                     <ul>
-  <li v-for="note in notes" :key="note.id">
-    <div :class="{ 'border rounded': true, 'bg-warning p-2': note.highlight }">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <!-- <span class="mr-2">></span> -->
-          <div class="text-center">
-            <p class="m-0">
-              {{ note.text }}
-              <br>
-              Дополнительно: {{ note.doptext }}
-              <br>
-              Область: {{ note.type }}
-              <br>
-              Приоритет: {{ note.priority }}
-            </p>
-          </div>
-        </div>
-        <input type="checkbox" v-model="note.done" id="check" class="form-check-input">
-      </div>
-    </div>
-  </li>
-</ul>
-
-
-                    <!-- <ul>
                         <li v-for="note in notes" :key="note.id">
                             <div :class="{ 'border rounded': true, 'bg-warning p-2': note.highlight }">
-                                <p>
-                                    {{ note.id }} ({{ note.priority }}) {{ note.text }} - {{ note.type }}
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <!-- <span class="mr-2">></span> -->
+                                        <div class="text-center">
+                                            <p class="m-0">
+                                                {{ note.text }}
+                                                <br>
+                                                Дополнительно: {{ note.doptext }}
+                                                <br>
+                                                Область: {{ note.type }}
+                                                <br>
+                                                Приоритет: {{ note.priority }}
+                                            </p>
+                                        </div>
+                                    </div>
                                     <input type="checkbox" v-model="note.done" id="check" class="form-check-input">
-                                    <br>
-                                    Дополнительно: {{ note.doptext }}
-                                </p>
+                                </div>
                             </div>
                         </li>
-                    </ul> -->
+                    </ul>
+
+
+
                 </div>
             </div>
         </div>
